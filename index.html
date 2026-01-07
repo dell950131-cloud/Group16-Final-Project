@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow Steep - 首頁</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+
+    <div class="sticky-sidebar closed" id="mySidebar">
+        
+        <div class="sidebar-toggle" onclick="toggleSidebar()">
+            <span id="toggle-icon">▶</span> </div>
+
+        <div class="sidebar-email">
+            <span>✉️</span>
+            <div>聯絡我們</div>
+            <a href="mailto:service@slowsteep.com">service@slowsteep.com</a>
+        </div>
+        <div class="sidebar-map">
+            <div style="font-size:0.9rem; margin-bottom:5px; font-weight:bold; color:#555;">門市位置</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d904.3141515273514!2d121.2401326696575!3d24.957382698616627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1767805672074!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a href="https://maps.google.com" target="_blank" style="display:block; margin-top:5px; font-size:0.8rem; color:#888;">查看大圖</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="store-name">
+                <span class="store-logo-icon">🍃</span>Slow Steep
+            </div>
+        </header>
+
+        <nav>
+            <a href="#other-info">關於我們</a>
+            <a href="#product-section">商品列表</a> <a href="#other-info">常見問題</a>
+            <a href="pages/member.html">會員系統</a>
+        </nav>
+
+        <div class="intro-section">
+            <div class="intro-text">
+                <div class="intro-content">
+                    <h2 style="margin-bottom:10px;">特色介紹</h2>
+                    <p style="line-height:1.6;">
+                        Slow Steep 致力於尋找最純粹的茶香。<br>
+                        我們嚴選高海拔茶葉，堅持傳統工法烘焙。<br>
+                        讓您在忙碌的生活中，透過一杯好茶，<br>
+                        放慢腳步，享受片刻的寧靜與回甘。
+                    </p>
+                </div>
+            </div>
+            
+            <div class="intro-slideshow">
+                <img src="assets/image/spec.png" class="slide active" alt="特色圖片 1">
+                <img src="assets/image/spec_1.png" class="slide" alt="特色圖片 2">
+                <img src="assets/image/spec_2.png" class="slide" alt="特色圖片 3">
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="回到頂部">▲</button>
+
+        <hr style="border:0; border-top:1px solid #eee; margin: 30px 0;">
+
+        <div class="category-block" id="product-section">
+            <div style="border-bottom: 2px solid #ddd; padding-bottom: 15px; margin-bottom: 20px; display:inline-block; width:100%; font-size: 1.8rem; font-weight: bold; color: #333;">
+                沖泡茶飲
+            </div>
+            <p class="cat-desc">嚴選優質茶葉，每日新鮮現泡，口感回甘，清爽解渴。</p>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="p-img">
+                        <img src="assets/image/product_a_1.png" alt="茶">
+                        <img src="assets/image/product_a_2.png" class="swap-img" alt="茶細節">
+                    </div>
+                    <span class="p-name">經典觀音山烏龍</span>
+                    <span class="p-price">TWD 55</span>
+                    <a href="pages/product_a.html" class="btn-green">點擊跳至商品頁面</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="p-img">
+                        <img src="assets/image/product_b_1.png" alt="茶">
+                        <img src="assets/image/product_b_2.png" class="swap-img" alt="茶細節">
+                    </div>
+                    <span class="p-name">經典大吉嶺紅茶</span>
+                    <span class="p-price">TWD 60</span>
+                    <a href="pages/product_b.html" class="btn-green">點擊跳至商品頁面</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="p-img">
+                         <img src="assets/image/product_c_1.png" alt="茶">
+                         <img src="assets/image/product_c_2.png" class="swap-img" alt="茶細節">
+                    </div>
+                    <span class="p-name">經典阿里山烏龍</span>
+                    <span class="p-price">TWD 65</span>
+                    <a href="pages/product_c.html" class="btn-green">點擊跳至商品頁面</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-block">
+            <div style="border-bottom: 2px solid #ddd; padding-bottom: 15px; margin-bottom: 20px; display:inline-block; width:100%; font-size: 1.8rem; font-weight: bold; color: #333;">
+                沖泡奶飲
+            </div>
+            <p class="cat-desc">香濃奶香與茶香完美融合，口感滑順，幸福滿分。</p>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="p-img">
+                        <img src="assets/image/product_d_1.png" alt="奶茶">
+                        <img src="assets/image/product_d_2.png" class="swap-img" alt="茶細節">
+                    </div>
+                    <span class="p-name">烏龍奶綠</span>
+                    <span class="p-price">TWD 65</span>
+                    <a href="pages/product_d.html" class="btn-green">點擊跳至商品頁面</a>
+                </div>
+                <div class="product-card">
+                    <div class="p-img">
+                        <img src="assets/image/product_e_1.png" alt="抹茶">
+                        <img src="assets/image/product_e_2.png" class="swap-img" alt="茶細節">
+                    </div>
+                    <span class="p-name">抹茶奶綠</span>
+                    <span class="p-price">TWD 70</span>
+                    <a href="pages/product_e.html" class="btn-green">點擊跳至商品頁面</a>
+                </div>
+                <div class="product-card">
+                    <div class="p-img">
+                        <img src="assets/image/product_f_1.png" alt="檸檬奶">
+                        <img src="assets/image/product_f_2.png" class="swap-img" alt="茶細節">
+                    </div>
+                    <span class="p-name">紅茶拿鐵</span>
+                    <span class="p-price">TWD 65</span>
+                    <a href="pages/product_f.html" class="btn-green">點擊跳至商品頁面</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="pages/cart.html" class="big-cart-btn">
+            點擊跳至購物車頁面
+        </a>
+
+        <div class="info-section" id="other-info">
+            <div class="info-title">
+                其他資訊<br>
+                <span style="font-size: 0.6em; color: #888;">About & QA</span>
+            </div>
+            <div class="info-content">
+                <h3 style="margin-top: 0; color: #4a704a;">關於我們</h3>
+                <p>我們致力於提供最優質的茶葉與牛奶，讓您享受每一口的香醇與滑順，於中原發家，現有二分店歡迎來店品嘗。</p>
+                <p>我們堅持選用天然食材，每日新鮮現煮，為的就是給顧客最安心、最健康的飲品體驗。</p>
+
+                <hr style="border: 0; border-top: 1px dashed #ccc; margin: 20px 0;">
+
+                <h3 style="margin-top: 0; color: #4a704a;">常見問題</h3>
+                
+                <div style="margin-bottom: 15px;">
+                    <strong style="color: #333;">Q: 是否每天現煮？</strong>
+                    <div style="color: #666; margin-top: 5px;">A: 我們堅持每日現煮現做，不喝隔夜茶。</div>
+                </div>
+
+                <div>
+                    <strong style="color: #333;">Q: 是否使用奶精？</strong>
+                    <div style="color: #666; margin-top: 5px;">A: 我們堅持零添加，保持原味本質，堅持使用原材料。</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-links">
+        <a href="pages/experience.html">關於我們(組員心得)</a> | 
+        <a href="#">隱私權政策</a>
+        </div>
+        <div style="margin-top: 10px; font-size: 0.8rem;">
+            © 2025 Slow Steep All Rights Reserved.
+        </div>
+    </footer>
+    
+    <script src="assets/js/index.js"></script>
+    <audio id="bgMusic" src="assets/music/bgm.mp3" loop></audio>
+</body>
+</html>

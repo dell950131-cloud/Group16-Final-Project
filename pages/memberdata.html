@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心 - Slow Steep</title>
+    <link rel="stylesheet" href="../assets/css/memberdata.css">
+</head>
+<body>
+    
+<!--這裡點擊標題可以回到首頁-->
+    <header class="site-header">
+        <a href="../index.html" class="logo-text">
+            <span style="font-size: 1.5rem;">🍃</span> Slow Steep
+        </a>
+        <div class="header-right">
+             <span>你好，王小明</span>
+             <a href="../index.html" class="btn-logout">登出</a>
+        </div>
+    </header>
+
+    <div class="layout-container">
+        
+        <aside class="member-sidebar">
+            <div class="avatar-box">
+                <div class="avatar">王</div> <h3>王小明</h3>
+                <p class="member-level">🏆 黃金會員</p>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#basic-info" class="active">基本資料</a></li>
+                <li><a href="#order-history">消費紀錄</a></li>
+                <li><a href="#my-reviews">我的評論</a></li>
+            </ul>
+        </aside>
+
+        <main class="member-content">
+            
+            <section id="basic-info" class="content-card">
+                <h2 class="card-title">個人基本資料</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>會員姓名</label>
+                        <div>王小明</div>
+                    </div>
+                    <div class="info-item">
+                        <label>電子信箱</label>
+                        <div>wang@example.com</div>
+                    </div>
+                    <div class="info-item">
+                        <label>手機號碼</label>
+                        <div>0912-345-678</div>
+                    </div>
+                    <div class="info-item">
+                        <label>註冊日期</label>
+                        <div>2023-11-20</div>
+                    </div>
+                    <div class="info-item full-width">
+                        <label>通訊地址</label>
+                        <div>桃園市中壢區中北路200號 (中原大學)</div>
+                    </div>
+                </div>
+                <button class="btn-edit" onclick="alert('編輯功能開發中...')">編輯資料</button>
+            </section>
+
+            <section id="order-history" class="content-card">
+                <h2 class="card-title">歷史消費紀錄</h2>
+                <div class="table-responsive">
+                    <table class="order-table">
+                        <thead>
+                            <tr>
+                                <th>訂單編號</th>
+                                <th>日期</th>
+                                <th>購買品項</th>
+                                <th>總金額</th>
+                                <th>狀態</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#20251001</td>
+                                <td>2025/10/01</td>
+                                <td>經典觀音山烏龍 x2</td>
+                                <td>$240</td>
+                                <td><span class="status-badge done">已完成</span></td>
+                            </tr>
+                            <tr>
+                                <td>#20251115</td>
+                                <td>2025/11/15</td>
+                                <td>抹茶奶綠 x1, 烏龍奶綠 x1</td>
+                                <td>$135</td>
+                                <td><span class="status-badge shipping">配送中</span></td>
+                            </tr>
+                            <tr>
+                                <td>#20251205</td>
+                                <td>2025/12/05</td>
+                                <td>大吉嶺紅茶 x5</td>
+                                <td>$300</td>
+                                <td><span class="status-badge pending">處理中</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="my-reviews" class="content-card">
+                <h2 class="card-title">評論與評分紀錄</h2>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="product-name">經典觀音山烏龍</span>
+                        <div class="review-meta">
+                            <span class="stars">★★★★★</span>
+                            <span class="date">2025/10/05</span>
+                        </div>
+                    </div>
+                    <p class="review-comment">茶香非常濃郁，喝完口齒留香！包裝也很精緻，送禮自用都很適合。</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="product-name">烏龍奶綠</span>
+                        <div class="review-meta">
+                            <span class="stars">★★★★☆</span>
+                            <span class="date">2025/11/20</span>
+                        </div>
+                    </div>
+                    <p class="review-comment">奶味很足，不會蓋過茶香，甜度適中，非常好喝！</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>

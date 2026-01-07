@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品 A - 電商展示</title>
+    <link rel="stylesheet" href="../assets/css/product.css">
+</head>
+<body>
+
+    <header>
+        <div class="store-name">
+            <span class="store-logo-icon">🍃</span>Slow Steep
+        </div>
+    </header>
+
+    <div class="main-container">
+        
+        <div class="product-image">
+            <div class="main-slider-container">
+                <img src="../assets/image/product_a_2.png" class="main-slide active" alt="產品視角1">
+                <img src="../assets/image/product_a_3.png" class="main-slide" alt="產品視角2">
+                <img src="../assets/image/product_a_4.png" class="main-slide" alt="產品視角3">
+
+                <button class="main-nav-btn main-prev" onclick="changeMainImage(-1)">&#10094;</button>
+                <button class="main-nav-btn main-next" onclick="changeMainImage(1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h1>經典觀音山烏龍</h1>
+            <div class="price">$120 TWD</div>
+            <p>特級茶葉雲霧工法精萃,唇齒留香</p>
+            
+            <div class="control-group">
+                <label for="quantity">數量選擇：</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+            </div>
+
+            <div class="action-buttons">
+                <a href="javascript:void(0)" id="cartBtn" class="btn-cart" onclick="addToCartWithDelay()">加入購物車</a>
+                <a href="../index.html" class="btn-home">回到首頁</a>
+            </div>
+        </div>
+    </div>
+    <div class="reviews-container">
+    <div class="reviews-title">顧客評價 (4.8/5.0)</div>
+    
+    <div class="reviews-grid">
+        <div class="review-card">
+                <div class="review-header">
+                    <span class="reviewer-name">王小明</span>
+                    <span class="review-stars">★★★★★</span>
+                </div>
+                <p class="review-text">茶香非常濃郁，喝完口齒留香！包裝也很精緻，送禮自用都很適合，會再回購。</p>
+            </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <span class="reviewer-name">陳雅婷</span>
+                <span class="review-stars">★★★★☆</span>
+            </div>
+            <p class="review-text">出貨速度很快，下單後兩天就收到了。茶葉品質不錯，泡久了也不會澀，推推！</p>
+        </div>
+    </div>
+    </div>
+    
+    <hr style="border:0; border-top:1px solid #ddd; max-width:1200px; margin: 0 auto 40px auto;">
+
+    <div class="related-section">
+        <h2 class="related-title">你可能也喜歡</h2>
+        
+        <button class="nav-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        
+        <div class="slider-viewport">
+            <div class="slider-track" id="track">
+                <div class="product-card">
+                    <a href="product_b.html">
+                        <div class="card-inner">
+                            <img src="../assets/image/product_b_1.png" class="related-img" alt="大吉嶺紅茶">
+                            <h3>經典大吉嶺紅茶</h3>
+                            <p>$60 TWD</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="product_c.html">
+                        <div class="card-inner">
+                            <img src="../assets/image/product_c_1.png" class="related-img" alt="阿里山烏龍">
+                            <h3>經典阿里山烏龍</h3>
+                            <p>$65 TWD</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="product_d.html">
+                        <div class="card-inner">
+                            <img src="../assets/image/product_d_1.png" class="related-img" alt="烏龍奶綠">
+                            <h3>烏龍奶綠</h3>
+                            <p>$65 TWD</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="product_e.html">
+                        <div class="card-inner">
+                            <img src="../assets/image/product_e_1.png" class="related-img" alt="抹茶奶綠">
+                            <h3>抹茶奶綠</h3>
+                            <p>$70 TWD</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="product_f.html">
+                        <div class="card-inner">
+                            <img src="../assets/image/product_f_1.png" class="related-img" alt="紅茶拿鐵">
+                            <h3>紅茶拿鐵</h3>
+                            <p>$65 TWD</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <button class="nav-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <span>關於我們</span> | 
+            <span>聯絡資訊</span> | 
+            <span>隱私權政策</span>
+        </div>
+        <div style="margin-top: 10px; font-size: 12px; color: #999;">
+            &copy; 2025 Slow Steep All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="../assets/js/product.js"></script>
+</body>
+</html>
