@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳確認 - Slow Steep</title>
+    <link rel="stylesheet" href="../assets/css/checkout.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo-text">
+            <span class="leaf-icon">🍃</span> Slow Steep
+        </div>
+    </header>
+
+<!-- 結帳主要內容區 -->
+    <div class="checkout-container">
+        
+        <div class="form-section">
+            <h2 class="section-title">收件資訊</h2>
+            
+            <form id="checkoutForm" onsubmit="return finishOrder(event)">
+                <div class="form-group">
+                    <label for="name">收件人姓名</label>
+                    <input type="text" id="name" class="form-control" placeholder="請輸入真實姓名" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">聯絡電話</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="09xx-xxx-xxx" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">電子信箱</label>
+                    <input type="email" id="email" class="form-control" placeholder="example@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">收件地址</label>
+                    <input type="text" id="address" class="form-control" placeholder="縣市/區域/街道巷弄" required>
+                </div>
+
+                <h2 class="section-title" style="margin-top: 30px;">付款方式</h2>
+                <div class="form-group">
+                    <label for="payment">選擇付款方式</label>
+                    <select id="payment" class="form-control">
+                        <option value="cod">貨到付款</option>
+                        <option value="credit">信用卡 (Visa/Master)</option>
+                        <option value="linepay">LINE Pay</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="note">訂單備註 (選填)</label>
+                    <textarea id="note" class="form-control" rows="3" placeholder="例如：管理室代收、飲料微糖..."></textarea>
+                </div>
+            </form>
+        </div>
+
+<!-- 訂單摘要區 -->
+        <div class="summary-card">
+            <h2 class="section-title" style="font-size: 1.2rem; border-bottom: 1px solid #ddd;">訂單摘要</h2>
+            
+            <div class="summary-item">
+                <span>經典烏龍茶 x 1</span>
+                <span>$50</span>
+            </div>
+            <div class="summary-item" style="border-top: 1px dashed #ddd; padding-top:10px; margin-top:10px;">
+                <span>小計</span>
+                <span>$50</span>
+            </div>
+            <div class="summary-item">
+                <span>運費</span>
+                <span>$30</span>
+            </div>
+
+            <div class="summary-total">
+                <span>應付金額</span>
+                <span>TWD 80</span>
+            </div>
+
+            <button type="submit" form="checkoutForm" class="btn-submit">確認付款</button>
+            
+            <a href="cart.html" class="btn-back">返回購物車</a>
+        </div>
+
+    </div>
+
+    <footer style="text-align: center; color: #666; font-size: 0.8rem; margin-top: auto;">
+        <div style="margin-bottom: 10px;">&copy; 2025 Slow Steep All Rights Reserved.</div>
+    </footer>
+    
+<!-- 模擬完成訂單邏輯 -->
+    <script src="../assets/js/checkout.js"></script>
+</body>
+</html>

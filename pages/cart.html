@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車 - Slow Steep</title>
+    <link rel="stylesheet" href="../assets/css/cart.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo-text">
+            <span class="leaf-icon">🍃</span> Slow Steep
+        </div>
+    </header>
+
+    <div class="cart-container">
+        <h1 class="cart-title">購物車</h1>
+        <div class="cart-header">
+            <div>商品</div>
+            <div>單價</div>
+            <div>數量</div>
+            <div></div> </div>
+
+<!-- 單一商品範例 -->
+        <div class="cart-item">
+            <div class="item-info">
+                <div class="item-img-placeholder">
+                    <img src="../assets/image/product_b_1.png" alt="經典烏龍茶">
+                </div>
+                <div class="item-name">經典烏龍茶</div>
+            </div>
+
+            <div class="item-price">TWD 50</div>
+
+            <div>
+                <select class="qty-select" onchange="updateTotal()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <a href="#" class="btn-delete" onclick="alert('已刪除')">刪除</a>
+        </div>
+
+        <div class="summary-section">
+            <div class="summary-row">小計: TWD <span id="subtotal">50</span></div>
+            <div class="summary-row">運費: TWD 30</div>
+            <div class="summary-total">總計: TWD <span id="final-total">80</span></div>
+        </div>
+
+        <div class="action-buttons">
+            <a href="checkout.html" class="btn btn-checkout" style="text-decoration:none;">前往結帳</a>
+            
+            <a href="../index.html" class="btn btn-continue">繼續購物</a>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <span>關於我們</span> | 
+            <span>聯絡資訊</span> | 
+            <span>隱私權政策</span>
+        </div>
+        <div style="margin-top: 10px; font-size: 12px; color: #999;">
+            &copy; 2025 Slow Steep All Rights Reserved.
+        </div>
+    </footer>
+    
+  <!--模擬計算邏輯-->
+    <script src="../assets/js/cart.js"></script>
+</body>
+</html>
